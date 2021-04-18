@@ -11,7 +11,6 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
 			"set_property",
 			"include",
 			"include_directories"
@@ -19,7 +18,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/home/aicenteruav/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.18/Modules/UsewxWidgets.cmake"
+			"/usr/share/cmake-3.16/Modules/UsewxWidgets.cmake"
 		],
 		"nodes" : 
 		[
@@ -33,32 +32,26 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 13,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
 				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"file" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 69,
 				"parent" : 3
 			},
 			{
-				"command" : 2,
-				"file" : 1,
-				"line" : 69,
-				"parent" : 4
-			},
-			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 1,
 				"line" : 58,
-				"parent" : 4
+				"parent" : 3
 			}
 		]
 	},
@@ -68,36 +61,36 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -pthread -g"
+					"fragment" : " -pthread -g  "
 				},
 				{
-					"fragment" : "-std=gnu++1z"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"define" : "WXUSINGDLL"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"define" : "_FILE_OFFSET_BITS=64"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"define" : "__WXGTK__"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0-unofficial"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "/usr/include/wx-3.0-unofficial"
 				}
@@ -127,22 +120,18 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "-L/usr/lib/x86_64-linux-gnu",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "-pthread",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "-lwx_gtk3u_unofficial_core-3.0",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "-lwx_baseu_unofficial-3.0",
 				"role" : "libraries"
 			}
